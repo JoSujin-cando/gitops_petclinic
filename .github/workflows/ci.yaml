@@ -68,7 +68,7 @@ jobs:
       - name: Commit and Push changes
         run: |
           git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --global user.email 'aby7089@naver.com'
           git add ./deployment-nginx.yaml ./deployment-tomcat.yaml
           git diff --quiet && git diff --staged --quiet || (
           git commit -m "Update image tag to ${GITHUB_SHA}"
